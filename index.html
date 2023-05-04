@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh_Hant_TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDA翻書 (練習)</title>
+    <!-- Plus Jakarta Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <!-- Custom icon -->
+    <link rel="icon" href="./favicon.ico">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Custom JS -->
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title" class="title">翻書練習</h1>
+    </header>
+
+    <div id="stopwatch-container">
+        <p class="timerDisplay" id="stopwatch">00:00:00</p>
+        <div id="timer-buttons">
+            <button onclick="main()" id="main-btn" class="btn">Start</button>
+            <button onclick="reset()" id="reset-btn" class="btn">Reset</button>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="card">
+            <div class="card__face flip-card-front">
+                <h1># <span id="question-num"></span></h1>
+                <h2 id="question">題目</h2>
+            </div>
+            <div class="card__face flip-card-back">
+                <h2>Ch. : <span id="chapter"></span></h2>
+                <h2>Page : <span id="page"></span></h2>
+                <h2>Line : <span id="line"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button" id="next-button" onclick="getQuestion()">NEXT</button>
+    </div>
+
+    <footer>
+        <p>Eric Han ©</p>
+    </footer>
+
+</body>
+</html>
