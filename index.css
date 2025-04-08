@@ -21,6 +21,12 @@ body {
   background: #408ce4;
 }
 
+.updateDate {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 span {
   margin: 10px;
 }
